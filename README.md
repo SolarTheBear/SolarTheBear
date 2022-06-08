@@ -1,0 +1,5 @@
+- 👋 Hi, I’m @SolarTheBear
+- 👀 I’m interested in chess, gaming, and coding
+- 🌱 I’m currently learning java
+- 💞️ I’m looking to collaborate on nothing
+- 📫 How to reach me - email (08huangmorris04@gmail.com)
