@@ -17,17 +17,27 @@ public class FinalExam7 {
     public static void main(String[] args) {
         Scanner userInput = new Scanner(System.in);
 
-        System.out.println("This program finds the first palindromic prime number greater than the user input.\n");
-        System.out.print("Enter a number (1 to 99): ");
-        int input = userInput.nextInt();
+        System.out.println("This program finds all the palindromic prime numbers between a given range.\n");
+        System.out.print("Enter the minimum number (1 to 999): ");
+        int min = userInput.nextInt();
+        System.out.print("Enter the maximum number (1 to 999): ");
+        int max = userInput.nextInt();
 
-        if (input > 0 && input < 100){
-            for (int x = input + 1; true; x++) {
+        if (min < max && min > 0 && min < 1000 && max < 1000) {
+            System.out.println();
+            for (int x = min; x <= max; x++) {
                 if (checkForPrime(x) && palindromeChecker(x)) {
-                    System.out.print("\n" + x + "\n");
-                    break;
+                    System.out.print(x + ", ");
                 }
             }
-        } else System.out.println("\nYou didn't enter a number within the given range\n\nTry Again");
+            System.out.println("\b\b");
+        }
+        if (min > max) {
+            System.out.println("\nThe minimum value is greater than the maximum value");
+            if (min < 1 || min > 999 || max < 1)
+                System.out.println("\nSome values aren't within the specified range\n\nTry Again");
+        }
+        if (min < 1 || min > 999 || max > 999)
+            System.out.println("\nSome values aren't within the specified range\n\nTry Again");
     }
 }
