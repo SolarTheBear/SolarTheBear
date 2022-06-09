@@ -7,40 +7,23 @@ public class FinalExam1 {
         Scanner userInput = new Scanner(System.in);
 
         String[] alphabet = new String[27];
-        alphabet[1] = "A";
-        alphabet[2] = "B";
-        alphabet[3] = "C";
-        alphabet[4] = "D";
-        alphabet[5] = "E";
-        alphabet[6] = "F";
-        alphabet[7] = "G";
-        alphabet[8] = "H";
-        alphabet[9] = "I";
-        alphabet[10] = "J";
-        alphabet[11] = "K";
-        alphabet[12] = "L";
-        alphabet[13] = "M";
-        alphabet[14] = "N";
-        alphabet[15] = "O";
-        alphabet[16] = "P";
-        alphabet[17] = "Q";
-        alphabet[18] = "R";
-        alphabet[19] = "S";
-        alphabet[20] = "T";
-        alphabet[21] = "U";
-        alphabet[22] = "V";
-        alphabet[23] = "W";
-        alphabet[24] = "X";
-        alphabet[25] = "Y";
-        alphabet[26] = "Z";
+        alphabet[1] = "A"; alphabet[2] = "B"; alphabet[3] = "C"; alphabet[4] = "D";
+        alphabet[5] = "E"; alphabet[6] = "F"; alphabet[7] = "G"; alphabet[8] = "H";
+        alphabet[9] = "I"; alphabet[10] = "J"; alphabet[11] = "K"; alphabet[12] = "L";
+        alphabet[13] = "M"; alphabet[14] = "N"; alphabet[15] = "O"; alphabet[16] = "P";
+        alphabet[17] = "Q"; alphabet[18] = "R"; alphabet[19] = "S"; alphabet[20] = "T";
+        alphabet[21] = "U"; alphabet[22] = "V"; alphabet[23] = "W"; alphabet[24] = "X";
+        alphabet[25] = "Y"; alphabet[26] = "Z";
 
+        System.out.println("This program requests two alphabets and I will make its alphabetical value follow the" +
+                " fibonacci sequence");
         System.out.print("Enter an alphabet: ");
         String first = userInput.next();
         System.out.print("Enter another alphabet: ");
         String second = userInput.next();
         System.out.println();
 
-        for (int i = 0; i < 27; i++){
+        for (int i = 0; i < 27; i++){ //Matches both alphabets with the alphabet[] array
             if (first.toUpperCase().equals(alphabet[i]))
                 first_int = i;
             if (second.toUpperCase().equals(alphabet[i]))
